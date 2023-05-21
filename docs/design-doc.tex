@@ -1,0 +1,88 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+%\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+%\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=25mm,
+ bottom=25mm
+ }
+
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+\usepackage{arcs}
+\usepackage{cancel}
+\usepackage{xfrac}
+\usepackage{amsthm}
+\usepackage{gensymb}
+\usepackage{xspace}
+
+\usepackage{epigraph}
+\usepackage{csquotes}
+\usepackage{soul}
+\usepackage{subcaption}
+\usepackage{verbatim}
+\usepackage{hyperref}
+%\usepackage{ctex}
+
+%SetFonts
+
+%SetFonts
+
+\usepackage[inline]{asymptote}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark}
+
+\title{Underwater Robotics -- Smooth Navigating with Depth Control}
+\date{May 21, 2023}							% Activate to display a given date or no date
+
+\newcommand{\latex}{\LaTeX\xspace}
+
+
+\begin{document}
+\maketitle
+
+\section{Objectives}
+We would like to design a robot that navigates underwater and satisfies the following requirements:
+\begin{enumerate}
+\item It should maintain a constant distance (i.e., 1 meter) from the bottom of water at any time.
+\item It should maintain a constant speed moving forward/backward;
+\item It should maintain self-balance while moving.
+\end{enumerate}
+
+
+\subsection{Building Parts}
+\begin{enumerate}
+\item A transparent plastic tube.
+\item A raspberry pi board.
+\item more $\cdots$ 
+\end{enumerate}
+
+\section{General Design}
+Distance sensors, PID control, air adjustment, propellers, etc. (We will complete the design after discussions).
+
+\section{Implementation}
+We will implement the software in ROS2~\cite{doi:10.1126/scirobotics.abm6074}.
+
+\section{Reference Project}
+We would like to refer to this RC Submarine 4.0~\cite{ref:bec, ref:becv} project for guidance.
+
+\bibliographystyle{plain}
+\bibliography{reference}
+ 
+
+\end{document} 
